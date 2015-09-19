@@ -23,3 +23,15 @@ logs you into a running container
 + `docker cp <container>:<filename> .`
 copy a file from the container back to the host for inspection eg:
 `docker cp web1:/var/log/apache2/error.log .`
+
+### Container management
+```bash
+docker pause <container>
+docker unpause <container>
+docker stop <container>
+docker start <container>
+docker rm <container>
+```
+
+### Commit changes to an image
+docker commit <container> <image name>
