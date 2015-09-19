@@ -1,0 +1,5 @@
+docker build -t htop:latest .
+
+### ignore caching
++ use the `--no-cache` build option
++ break the cache deliberately in the Dockerfile
