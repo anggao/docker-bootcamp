@@ -1,0 +1,25 @@
+docker build -t bootcamp:webserver .
+docker run -P -d bootcamp:webserver
+
+docker port <container>
+
+docker-machine ip default
+
+
+### Debugging a running container
+
++ `docker top <container>`
+shows the processes running inside a container
+
++ `docker logs -f <container>`
+tails the stdout from the container
+
++ `docker diff <container>`
+shows the filesystem changes made in the containers.
+
++ `docker exec -it <container> /bin/bash`
+logs you into a running container
+
++ `docker cp <container>:<filename> .`
+copy a file from the container back to the host for inspection eg:
+`docker cp web1:/var/log/apache2/error.log .`
