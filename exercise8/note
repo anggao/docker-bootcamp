@@ -1,0 +1,13 @@
+docker run -d -P -v ${PWD}:/var/www/html bootcamp:webserver
+
+### Note:
++ when a container is in a paused state you can still login to it:
+  `docker exec -it web2 /bin/bash`
+
+### Linking containers
++ Links allow containers to discover each other and securely transfer information about one container to another.
++ A source container and a recipient container
++ --link option
++ Docker relies on the names of your containers
+
+

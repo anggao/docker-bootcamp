@@ -1,0 +1,10 @@
+docker stop 6c959f40e1b4
+docker commit 6c959f40e1b4 bootcamp:webserver
+docker images
+docker run -P -d bootcamp:webserver
+docker ps
+
+
+### Data Volumes
+
+docker run -it -v ${PWD}:/var/tmp ubuntu:14.04 /bin/bash
